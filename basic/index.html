@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>PWA Basic Example</TITLE>
+  <link rel="manifest" href="./manifest.json">
+ </HEAD>
+
+ <BODY>
+ <script>
+ 
+  if ('serviceWorker' in navigator)
+  {
+    
+    navigator.serviceWorker
+             .register('./sw.js')
+             .then(function() { console.log('Hurray ! Service Worker Registered'); });
+  } 
+  else
+  {
+  console.log('Service Worker Not Wroking .......'); 
+  }
+  </script>
+   <img width="248" height="84" alt="Hainan Airlines logo" src="./logo-mobile.png">
+  <br/>
+  This is example****.....
+ </BODY>
+
+</HTML>
